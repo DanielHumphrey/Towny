@@ -189,7 +189,6 @@ public class WarZoneListener implements Listener {
 		 */
 		event.setCancelled(false);
 	}
-
 	
 	@EventHandler (priority=EventPriority.LOWEST, ignoreCancelled = true)
 	public void onFlagWarFlagPlace(TownyBuildEvent event) {
@@ -207,6 +206,4 @@ public class WarZoneListener implements Listener {
 				event.setMessage(e.getMessage());
 			}
 	}
-	
-	
 }
