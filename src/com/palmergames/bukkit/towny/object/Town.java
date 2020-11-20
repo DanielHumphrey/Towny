@@ -62,6 +62,8 @@ public class Town extends Government implements TownBlockOwner {
 	private int conqueredDays;
 	private final ConcurrentHashMap<WorldCoord, TownBlock> townBlocks = new ConcurrentHashMap<>();
 	private final TownyPermission permissions = new TownyPermission();
+	private boolean isAtWar = false;
+	
 
 	public Town(String name) {
 		super(name);
@@ -1306,6 +1308,36 @@ public class Town extends Government implements TownBlockOwner {
 
 		return false;
 	}
+	
+	// BEGIN GENETOR CODE GOD HELP ME
+	
+	
+	public boolean IsBeingAttacked() {
+		
+		
+		
+	}
+	
+	public boolean IsDefending() {
+		
+	}
+	
+	
+	
+	/*
+	 * Ok basically heres the roadmap
+	 * 
+	 * 1. Get booleans eg is the town defending or not working so there cannot be simouiltanious attacks
+	 * 2. Set up attack methods, defending methods
+	 * Everything handeled from JaceWar.java 
+	 * 3. 
+	 * 
+	 */
+	
+	
+	
+	
+	
 
 	/**
 	 * @deprecated As of 0.97.0.0+ please use {@link EconomyAccount#getWorld()} instead.
